@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/move.mp3-93ea575f29b93e675816de9182ce239b.mp3str"
+
+[deps]
+
+source_file="res://Sound/Effects/move.mp3"
+dest_files=[ "res://.import/move.mp3-93ea575f29b93e675816de9182ce239b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

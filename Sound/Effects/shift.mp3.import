@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/shift.mp3-fd79d37d9afb95971023bc4f8ac5a7e4.mp3str"
+
+[deps]
+
+source_file="res://Sound/Effects/shift.mp3"
+dest_files=[ "res://.import/shift.mp3-fd79d37d9afb95971023bc4f8ac5a7e4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

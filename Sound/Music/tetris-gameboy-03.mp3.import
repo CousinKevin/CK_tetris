@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tetris-gameboy-03.mp3-17aae754e529aef1c902554779267d4e.mp3str"
+
+[deps]
+
+source_file="res://Sound/Music/tetris-gameboy-03.mp3"
+dest_files=[ "res://.import/tetris-gameboy-03.mp3-17aae754e529aef1c902554779267d4e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

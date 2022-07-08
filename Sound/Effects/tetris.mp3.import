@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tetris.mp3-69bbd160119c83f75cb5ec4abb04169a.mp3str"
+
+[deps]
+
+source_file="res://Sound/Effects/tetris.mp3"
+dest_files=[ "res://.import/tetris.mp3-69bbd160119c83f75cb5ec4abb04169a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

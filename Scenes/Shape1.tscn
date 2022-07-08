@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Block.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/Sprite-Square.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Shape1.gd" type="Script" id=3]
+
+[node name="Shape1" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Block" parent="." instance=ExtResource( 1 )]
+position = Vector2( -8, -8 )
+asset = ExtResource( 2 )
+
+[node name="Block2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, -8 )
+asset = ExtResource( 2 )
+
+[node name="Block3" parent="." instance=ExtResource( 1 )]
+position = Vector2( -8, 0 )
+asset = ExtResource( 2 )
+
+[node name="Block4" parent="." instance=ExtResource( 1 )]
+asset = ExtResource( 2 )

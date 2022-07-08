@@ -1,0 +1,280 @@
+[gd_scene load_steps=41 format=2]
+
+[ext_resource path="res://UI/logo.png" type="Texture" id=1]
+[ext_resource path="res://UI/Numbers/tile005.png" type="Texture" id=2]
+[ext_resource path="res://UI/Numbers/tile008.png" type="Texture" id=3]
+[ext_resource path="res://UI/Numbers/tile004.png" type="Texture" id=4]
+[ext_resource path="res://UI/Numbers/tile001.png" type="Texture" id=5]
+[ext_resource path="res://UI/Numbers/tile006.png" type="Texture" id=6]
+[ext_resource path="res://UI/Numbers/tile003.png" type="Texture" id=7]
+[ext_resource path="res://UI/Numbers/tile007.png" type="Texture" id=8]
+[ext_resource path="res://UI/Numbers/tile009.png" type="Texture" id=9]
+[ext_resource path="res://UI/Numbers/tile002.png" type="Texture" id=10]
+[ext_resource path="res://UI/Numbers/Hover/tile001.png" type="Texture" id=11]
+[ext_resource path="res://UI/Numbers/Hover/tile006.png" type="Texture" id=12]
+[ext_resource path="res://UI/Numbers/Hover/tile003.png" type="Texture" id=13]
+[ext_resource path="res://UI/Numbers/Hover/tile007.png" type="Texture" id=14]
+[ext_resource path="res://UI/Numbers/Hover/tile008.png" type="Texture" id=15]
+[ext_resource path="res://UI/Numbers/Hover/tile004.png" type="Texture" id=16]
+[ext_resource path="res://UI/Numbers/Hover/tile002.png" type="Texture" id=17]
+[ext_resource path="res://UI/Numbers/Hover/tile005.png" type="Texture" id=18]
+[ext_resource path="res://UI/Numbers/Hover/tile009.png" type="Texture" id=19]
+[ext_resource path="res://UI/Numbers/Pressed/tile004.png" type="Texture" id=20]
+[ext_resource path="res://UI/Numbers/Pressed/tile005.png" type="Texture" id=21]
+[ext_resource path="res://UI/Numbers/Pressed/tile003.png" type="Texture" id=22]
+[ext_resource path="res://UI/Numbers/Pressed/tile001.png" type="Texture" id=23]
+[ext_resource path="res://UI/Numbers/Pressed/tile006.png" type="Texture" id=24]
+[ext_resource path="res://UI/Numbers/Pressed/tile002.png" type="Texture" id=25]
+[ext_resource path="res://UI/Numbers/Pressed/tile007.png" type="Texture" id=26]
+[ext_resource path="res://UI/Numbers/Pressed/tile009.png" type="Texture" id=27]
+[ext_resource path="res://UI/Numbers/Pressed/tile008.png" type="Texture" id=28]
+[ext_resource path="res://Start.gd" type="Script" id=29]
+[ext_resource path="res://UI/enter_btn.png" type="Texture" id=30]
+[ext_resource path="res://UI/Font/tile000.png" type="Texture" id=31]
+[ext_resource path="res://UI/Font/tile002.png" type="Texture" id=32]
+[ext_resource path="res://UI/Font/tile014.png" type="Texture" id=33]
+[ext_resource path="res://UI/Font/tile018.png" type="Texture" id=34]
+[ext_resource path="res://UI/Font/tile019.png" type="Texture" id=35]
+[ext_resource path="res://UI/Font/tile011.png" type="Texture" id=36]
+[ext_resource path="res://UI/Font/tile004.png" type="Texture" id=37]
+[ext_resource path="res://UI/Font/tile021.png" type="Texture" id=38]
+[ext_resource path="res://UI/Font/tile015.png" type="Texture" id=39]
+[ext_resource path="res://UI/Font/tile017.png" type="Texture" id=40]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 29 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 144.0
+margin_bottom = 160.0
+color = Color( 0.631373, 0.937255, 0.54902, 1 )
+
+[node name="Logo" type="Sprite" parent="."]
+modulate = Color( 0.266667, 0.380392, 0.462745, 1 )
+position = Vector2( 72, 24 )
+scale = Vector2( 0.125, 0.125 )
+texture = ExtResource( 1 )
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 48.0
+margin_top = 64.0
+margin_right = 74.0
+margin_bottom = 90.0
+rect_scale = Vector2( 2, 2 )
+columns = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureButton" type="TextureButton" parent="GridContainer" groups=["LevelSelect"]]
+margin_right = 6.0
+margin_bottom = 6.0
+toggle_mode = true
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 23 )
+texture_hover = ExtResource( 11 )
+stretch_mode = 3
+
+[node name="TextureButton2" type="TextureButton" parent="GridContainer" groups=["LevelSelect"]]
+margin_left = 10.0
+margin_right = 16.0
+margin_bottom = 6.0
+toggle_mode = true
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 25 )
+texture_hover = ExtResource( 17 )
+
+[node name="TextureButton3" type="TextureButton" parent="GridContainer" groups=["LevelSelect"]]
+margin_left = 20.0
+margin_right = 26.0
+margin_bottom = 6.0
+toggle_mode = true
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 22 )
+texture_hover = ExtResource( 13 )
+
+[node name="TextureButton4" type="TextureButton" parent="GridContainer" groups=["LevelSelect"]]
+margin_top = 10.0
+margin_right = 6.0
+margin_bottom = 16.0
+toggle_mode = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 20 )
+texture_hover = ExtResource( 16 )
+
+[node name="TextureButton5" type="TextureButton" parent="GridContainer" groups=["LevelSelect"]]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 16.0
+margin_bottom = 16.0
+toggle_mode = true
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 21 )
+texture_hover = ExtResource( 18 )
+
+[node name="TextureButton6" type="TextureButton" parent="GridContainer" groups=["LevelSelect"]]
+margin_left = 20.0
+margin_top = 10.0
+margin_right = 26.0
+margin_bottom = 16.0
+toggle_mode = true
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 24 )
+texture_hover = ExtResource( 12 )
+
+[node name="TextureButton7" type="TextureButton" parent="GridContainer" groups=["LevelSelect"]]
+margin_top = 20.0
+margin_right = 6.0
+margin_bottom = 26.0
+toggle_mode = true
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 26 )
+texture_hover = ExtResource( 14 )
+
+[node name="TextureButton8" type="TextureButton" parent="GridContainer" groups=["LevelSelect"]]
+margin_left = 10.0
+margin_top = 20.0
+margin_right = 16.0
+margin_bottom = 26.0
+toggle_mode = true
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 28 )
+texture_hover = ExtResource( 15 )
+
+[node name="TextureButton9" type="TextureButton" parent="GridContainer" groups=["LevelSelect"]]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 26.0
+margin_bottom = 26.0
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 27 )
+texture_hover = ExtResource( 19 )
+
+[node name="LevelSelect" type="Node2D" parent="."]
+position = Vector2( 35, 53 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Level" type="Node2D" parent="LevelSelect"]
+
+[node name="Sprite" type="Sprite" parent="LevelSelect/Level"]
+texture = ExtResource( 36 )
+
+[node name="Sprite2" type="Sprite" parent="LevelSelect/Level"]
+position = Vector2( 8, 0 )
+texture = ExtResource( 37 )
+
+[node name="Sprite3" type="Sprite" parent="LevelSelect/Level"]
+position = Vector2( 16, 0 )
+texture = ExtResource( 38 )
+
+[node name="Sprite4" type="Sprite" parent="LevelSelect/Level"]
+position = Vector2( 24, 0 )
+texture = ExtResource( 37 )
+
+[node name="Sprite5" type="Sprite" parent="LevelSelect/Level"]
+position = Vector2( 32, 0 )
+texture = ExtResource( 36 )
+
+[node name="Select" type="Node2D" parent="LevelSelect"]
+
+[node name="Sprite6" type="Sprite" parent="LevelSelect/Select"]
+position = Vector2( 43, 0 )
+texture = ExtResource( 34 )
+
+[node name="Sprite7" type="Sprite" parent="LevelSelect/Select"]
+position = Vector2( 51, 0 )
+texture = ExtResource( 37 )
+
+[node name="Sprite8" type="Sprite" parent="LevelSelect/Select"]
+position = Vector2( 59, 0 )
+texture = ExtResource( 36 )
+
+[node name="Sprite9" type="Sprite" parent="LevelSelect/Select"]
+position = Vector2( 67, 0 )
+texture = ExtResource( 37 )
+
+[node name="Sprite10" type="Sprite" parent="LevelSelect/Select"]
+position = Vector2( 75, 0 )
+texture = ExtResource( 32 )
+
+[node name="Sprite11" type="Sprite" parent="LevelSelect/Select"]
+position = Vector2( 83, 0 )
+texture = ExtResource( 35 )
+
+[node name="Start" type="Node2D" parent="."]
+position = Vector2( 0, 14 )
+
+[node name="Press" type="Node2D" parent="Start"]
+position = Vector2( -24, 0 )
+
+[node name="Sprite2" type="Sprite" parent="Start/Press"]
+position = Vector2( 32, 136 )
+texture = ExtResource( 39 )
+
+[node name="Sprite3" type="Sprite" parent="Start/Press"]
+position = Vector2( 40, 136 )
+texture = ExtResource( 40 )
+
+[node name="Sprite4" type="Sprite" parent="Start/Press"]
+position = Vector2( 48, 136 )
+texture = ExtResource( 37 )
+
+[node name="Sprite5" type="Sprite" parent="Start/Press"]
+position = Vector2( 56, 136 )
+texture = ExtResource( 34 )
+
+[node name="Sprite6" type="Sprite" parent="Start/Press"]
+position = Vector2( 64, 136 )
+texture = ExtResource( 34 )
+
+[node name="Enter" type="Sprite" parent="Start"]
+self_modulate = Color( 0.266667, 0.380392, 0.462745, 1 )
+position = Vector2( 65, 136 )
+scale = Vector2( 0.0821429, 0.0821429 )
+texture = ExtResource( 30 )
+
+[node name="ToStart" type="Node2D" parent="Start"]
+position = Vector2( 75, 0 )
+
+[node name="Sprite2" type="Sprite" parent="Start/ToStart"]
+position = Vector2( 14, 136 )
+texture = ExtResource( 35 )
+
+[node name="Sprite3" type="Sprite" parent="Start/ToStart"]
+position = Vector2( 22, 136 )
+texture = ExtResource( 33 )
+
+[node name="Sprite4" type="Sprite" parent="Start/ToStart"]
+position = Vector2( 32, 136 )
+texture = ExtResource( 34 )
+
+[node name="Sprite5" type="Sprite" parent="Start/ToStart"]
+position = Vector2( 40, 136 )
+texture = ExtResource( 35 )
+
+[node name="Sprite6" type="Sprite" parent="Start/ToStart"]
+position = Vector2( 48, 136 )
+texture = ExtResource( 31 )
+
+[node name="Sprite7" type="Sprite" parent="Start/ToStart"]
+position = Vector2( 56, 136 )
+texture = ExtResource( 40 )
+
+[node name="Sprite8" type="Sprite" parent="Start/ToStart"]
+position = Vector2( 63, 136 )
+texture = ExtResource( 35 )
+
+[connection signal="pressed" from="GridContainer/TextureButton" to="." method="_on_TextureButton_pressed" binds= [ 0 ]]
+[connection signal="pressed" from="GridContainer/TextureButton2" to="." method="_on_TextureButton_pressed" binds= [ 1 ]]
+[connection signal="pressed" from="GridContainer/TextureButton3" to="." method="_on_TextureButton_pressed" binds= [ 2 ]]
+[connection signal="pressed" from="GridContainer/TextureButton4" to="." method="_on_TextureButton_pressed" binds= [ 3 ]]
+[connection signal="pressed" from="GridContainer/TextureButton5" to="." method="_on_TextureButton_pressed" binds= [ 4 ]]
+[connection signal="pressed" from="GridContainer/TextureButton6" to="." method="_on_TextureButton_pressed" binds= [ 5 ]]
+[connection signal="pressed" from="GridContainer/TextureButton7" to="." method="_on_TextureButton_pressed" binds= [ 6 ]]
+[connection signal="pressed" from="GridContainer/TextureButton8" to="." method="_on_TextureButton_pressed" binds= [ 7 ]]
+[connection signal="pressed" from="GridContainer/TextureButton9" to="." method="_on_TextureButton_pressed" binds= [ 8 ]]
